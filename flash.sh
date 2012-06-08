@@ -121,8 +121,7 @@ case "$1" in
 	;;
 
 "gaia-demo")
-	make -C gaia install-media-samples ADB="$ADB"
-	make -C gaia install-gaia EXCLUDED="uitest test-agent" ADB="$ADB" GAIA_DOMAIN="thisdomaindoesnotexist.org"
+	make -C gaia install-gaia ADB="$ADB" DEMO=1
 	exit $?
 	;;
 
