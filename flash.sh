@@ -121,7 +121,7 @@ case "$1" in
 	;;
 
 "gaia-demo")
-	make -C gaia install-gaia ADB="$ADB" DEMO=1
+	make -C gaia demo ADB="$ADB"
 	exit $?
 	;;
 
